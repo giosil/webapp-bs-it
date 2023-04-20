@@ -7,7 +7,7 @@
 					<div class="col-sm-12">
 						<div class="it-brand-wrapper">
 							<a href="index.jsp" title="FoodHub Ittico" rel="home">
-								<img class="icon" src="./img/log_app.png" alt="App">
+								<img class="icon" src="./img/logo_app.png" alt="App">
 								<div class="it-brand-text">
 									<h2 class="no_toc"><%= App.getBrandName() %></h2>
 									<h3 class="no_toc d-none d-md-block"><%= App.getBrandMotto() %></h3>

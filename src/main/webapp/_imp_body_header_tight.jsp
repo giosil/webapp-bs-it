@@ -10,8 +10,8 @@
 					<div class="col-md-5 d-none d-md-block">
 						<div class="it-header-slim-wrapper-content">
 							<div class="row">
-								<img src="./img/log_app.png" alt="brand" style="width:60px;height:60px;">
-								<a href="index.jsp" title="FoodHub Ittico" rel="home" style="text-decoration:none">
+								<img src="./img/logo_app.png" alt="brand" style="width:60px;height:60px;">
+								<a href="index.jsp" title="Webapp" rel="home" style="text-decoration:none">
 									<h2 class="no_toc" style="padding-top:8px;padding-left:16px"><%= App.getBrandName() %></h2>
 								</a>
 							</div>

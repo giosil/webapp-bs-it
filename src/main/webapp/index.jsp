@@ -40,7 +40,7 @@
 														<div class="row">
 															<div class="col">
 																<p class="m-0 text-center ">
-																	<img class="img-responsive m-0" src="./img/log_app.png" width="200px" alt="">
+																	<img class="img-responsive m-0" src="./img/logo_app.png" width="200px" alt="">
 																</p>
 																<h2 class="text-center text-white m-0" style="font-size: 1.5rem;"><%= App.getBrandMotto() %></h2>
 															</div>

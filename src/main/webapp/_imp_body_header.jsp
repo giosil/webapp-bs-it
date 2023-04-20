@@ -40,7 +40,7 @@
 						<div class="col-12">
 							<div class="it-header-center-content-wrapper">
 								<div class="it-brand-wrapper">
-									<a href="index.jsp" title="Webapp" rel="home">
+									<a href="index.jsp" title="Home" rel="home">
 										<img class="icon" src="./img/logo_app.png" alt="brand">
 										<div class="it-brand-text">
 											<h2 class="no_toc"><%= App.getBrandName() %></h2>

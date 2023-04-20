@@ -6,7 +6,7 @@
 				<div class="row clearfix">
 					<div class="col-sm-12">
 						<div class="it-brand-wrapper">
-							<a href="index.jsp" title="FoodHub Ittico" rel="home">
+							<a href="index.jsp" title="Home" rel="home">
 								<img class="icon" src="./img/logo_app.png" alt="App">
 								<div class="it-brand-text">
 									<h2 class="no_toc"><%= App.getBrandName() %></h2>
@@ -25,7 +25,7 @@
 								<div class="row">
 									<div class="col-md-6 text-center mb-3">
 										<h6>Contatti</h6>
-										<p> e-mail: <a href="mailto:info@foodhubittico.it">info@dew.org</a></p>
+										<p> e-mail: <a href="mailto:info@dew.org">info@dew.org</a></p>
 									</div>
 									<div class="col-md-6 text-center mb-3">
 										<h6>Collegamenti:</h6>

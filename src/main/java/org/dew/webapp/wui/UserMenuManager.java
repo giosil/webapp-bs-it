@@ -23,8 +23,8 @@ class UserMenuManager implements IUserMenuManager
     m.addMenuItem(new MenuItem("profilo.profilo",          "Profilo",               null, "page_profile.jsp",        "profilo"));
     
     if(role.equalsIgnoreCase("admin")) {
-      m.addMenuItem(new MenuItem("admin",                 "Amministrazione",      null,                              null));
-      m.addMenuItem(new MenuItem("admin.utenti",          "Utenti",               null, "admin_utenti.jsp",          "admin"));
+      m.addMenuItem(new MenuItem("admin",                 "Amministrazione",        null,                            null));
+      m.addMenuItem(new MenuItem("admin.utenti",          "Utenti",                 null, "admin_utenti.jsp",        "admin"));
     }
     
     return m;

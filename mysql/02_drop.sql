@@ -1,0 +1,15 @@
+--
+-- Drop tables
+--
+
+DROP TABLE IF EXISTS `TAB_SEQUENCES`;
+
+DROP TABLE IF EXISTS `UTE_ACCESSI`;
+DROP TABLE IF EXISTS `UTE_UTENTI_ANAGRAFICHE`;
+DROP TABLE IF EXISTS `UTE_UTENTI`;
+DROP TABLE IF EXISTS `UTE_RUOLI_RISORSE`;
+DROP TABLE IF EXISTS `UTE_RUOLI`;
+
+-- mysql --user=root --password[=password] webapp
+-- source C:/prj/fhw/database/02_drop.sql;
+--

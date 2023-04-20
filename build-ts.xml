@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<project name="webapp-ts" default="complete" basedir="src/main/webapp">
+	<property name="css.dir" value="css"  />
+	<property name="out.dir" value="wux/js"  />
+
+	<!-- Targets di servizio -->
+	<target name="complete" depends="compilation" />
+	<target name="normal"   depends="compilation" />
+
+	<!-- Target di Compilazione -->
+	<target name="compilation">
+		<delete dir="${out.dir}" includeEmptyDirs="true" />
+		<mkdir  dir="${out.dir}" />
+		
+		<antcall target="compile_wux" />
+		<antcall target="compile_app" />
+		<antcall target="minimize_css" />
+	</target>
+	
+	<target name="compile_wux">
+		<echo>Compile WUX...</echo>
+		<exec executable="tsc" vmlauncher="false">
+			<arg value="--declaration" />
+			<arg value="--project" />
+			<arg value="./ts/wux/tsconfig.json" />
+		</exec>
+		
+		<echo>Minify WUX...</echo>
+		<exec executable="minify" vmlauncher="false">
+			<arg value="${out.dir}/wux.js" />
+		</exec>
+	</target>
+	
+	<target name="compile_app">
+		<echo>Compile APP...</echo>
+		<exec executable="tsc" vmlauncher="false">
+			<arg value="--noEmitHelpers" />
+			<arg value="--declaration" />
+			<arg value="--project" />
+			<arg value="./ts/app/tsconfig.json" />
+		</exec>
+		
+		<echo>Minify APP...</echo>
+		<exec executable="minify" vmlauncher="false">
+			<arg value="${out.dir}/app.js" />
+		</exec>
+	</target>
+	
+	<target name="minimize_css">
+		<echo>Minimize theme.css...</echo>
+		<exec executable="uglifycss" vmlauncher="false">
+			<arg value="${css.dir}/theme.css" />
+			<arg value="--output" />
+			<arg value="${css.dir}/theme.min.css" />
+		</exec>
+		
+		<echo>Minimize main.css...</echo>
+		<exec executable="uglifycss" vmlauncher="false">
+			<arg value="${css.dir}/main.css" />
+			<arg value="--output" />
+			<arg value="${css.dir}/main.min.css" />
+		</exec>
+	</target>
+</project>

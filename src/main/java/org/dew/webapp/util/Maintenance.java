@@ -74,7 +74,7 @@ class Maintenance
       config += App.CONF_MAIL_STLS      + " = true\n";
     }
     
-    // Configurazione BMTI
+    // Configurazione
     config += "\n";
     
     boolean result = false;

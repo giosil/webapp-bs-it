@@ -835,7 +835,7 @@ var APP;
         __extends(OLMap, _super);
         function OLMap(id, classStyle, style, attributes) {
             var _this = _super.call(this, id ? id : '*', 'OLMap', null, classStyle, style ? style : 'width:100%;height:600px', attributes) || this;
-            _this.imgs = '/foodhub/img/';
+            _this.imgs = '/webapp-bs-it/img/';
             _this.pdx = 0;
             _this.pdy = 0;
             _this._cfg = {};

@@ -48,7 +48,7 @@ class WSUtenti
         if(testEmail.length() > 5 && testEmail.indexOf('@') > 0 && testEmail.indexOf('.') > 0) {
           try {
             logger.debug("Send test email to " + testEmail);
-            MailManager.sendHTMLContent(testEmail, "FoodHub - test", App.buildResetPasswordEmail("0"));
+            MailManager.sendHTMLContent(testEmail, "Webapp - test", App.buildResetPasswordEmail("0"));
           }
           catch(Exception ex) {
             logger.error("Eccezione in WSUtenti.find(" + filter + ")#mail", ex);
@@ -505,7 +505,7 @@ class WSUtenti
     if(sendEmail) {
       String html = App.buildActivateEmail(result);
       
-      MailManager.sendHTMLContent(email, "FoodHub - accreditamento", html);
+      MailManager.sendHTMLContent(email, "Webapp - accreditamento", html);
     }
     
     return result;
@@ -922,7 +922,7 @@ class WSUtenti
       if(result > 0) {
         String html = App.buildResetPasswordEmail(codAttivazione);
         
-        MailManager.sendHTMLContent(email, "FoodHub - reset password", html);
+        MailManager.sendHTMLContent(email, "Webapp - reset password", html);
       }
     } 
     catch (Exception ex) {

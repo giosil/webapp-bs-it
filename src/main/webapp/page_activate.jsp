@@ -25,7 +25,7 @@
 
 <% } else if(user != null) { %>
 
-						<p>Benvenuti in FoodHub, il suo account &egrave; stato attivato.</p>
+						<p>Benvenuti in Webapp, il suo account &egrave; stato attivato.</p>
 						<p>Occorre indicare la password da utilizzare negli accessi successivi:</p>
 						<div class="row">
 							<div class="col-md-6">

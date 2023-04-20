@@ -34,7 +34,7 @@ namespace APP {
 
 	export class OLMap extends WUX.WComponent<any, string> {
 		_cfg: OLMapCfg;
-		imgs: string = '/foodhub/img/';
+		imgs: string = '/webapp-bs-it/img/';
 
 		map: ol.Map;
 		view: ol.View;

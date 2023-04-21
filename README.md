@@ -9,7 +9,7 @@ Web application boilerplate based on a template of Bootstrap Italia.
 - `git clone https://github.com/giosil/multi-rpc.git` 
 - `mvn clean install` - this will publish `multi-rpc-2.0.0.jar` in Maven local repository
 
-## Build and deploy web application with Wrapp
+## Build and deploy web application
 
 - `git clone https://github.com/giosil/webapp-bs-it.git` 
 - `mvn clean install` - this will produce `webapp-bs-it.war` in `target` directory

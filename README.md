@@ -22,16 +22,16 @@ Web application boilerplate based on a template of Bootstrap Italia.
 
 Launch http://localhost:8080/webapp-bs-it on browser.
 
-Home Page:
+**Home Page**
 ![Home Page](screen_1.jpg)
 
-Article:
+**Article**
 ![Article Page](screen_2.jpg)
 
-Login Page:
+**Login Page**
 ![Login Page](screen_3.jpg)
 
-Application:
+**Application**
 ![App Page](screen_4.jpg)
 
 ## Contributors

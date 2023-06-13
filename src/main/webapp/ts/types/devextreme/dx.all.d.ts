@@ -1,9 +1,9 @@
 /*!
 * DevExtreme (dx.all.d.ts)
-* Version: 20.1.16
-* Build date: Tue Oct 18 2022
+* Version: 20.1.17
+* Build date: Fri Apr 07 2023
 *
-* Copyright (c) 2012 - 2022 Developer Express Inc. ALL RIGHTS RESERVED
+* Copyright (c) 2012 - 2023 Developer Express Inc. ALL RIGHTS RESERVED
 * Read about DevExtreme licensing here: https://js.devexpress.com/Licensing/
 */
 /* #StartGlobalDeclaration */
@@ -2580,6 +2580,10 @@ declare module DevExpress.excelExporter {
          * Customizes an Excel cell after creation.
          */
         customizeCell?: ((options: { gridCell?: ExcelDataGridCell, excelCell?: any }) => any);
+        /**
+         * 
+         */
+        encodeExecutableContent?: boolean;
         /**
          * Specifies whether Excel columns should have the same width as their source UI component's columns.
          */

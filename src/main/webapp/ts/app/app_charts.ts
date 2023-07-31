@@ -169,6 +169,8 @@ namespace APP {
 				},
 				tooltip: {
 					enabled: true,
+					location: 'edge',
+					customizeTooltip(a){return {text: `${a.seriesName}: ${a.valueText}`};}
 				}
 			};
 			if(this.palette) {
@@ -303,6 +305,7 @@ namespace APP {
 				},
 				tooltip: {
 					enabled: true,
+					customizeTooltip(a){return {text: `${a.argumentText}: ${a.valueText}`};}
 				}
 			};
 			if(this.palette) {

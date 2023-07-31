@@ -355,6 +355,8 @@ var APP;
                 },
                 tooltip: {
                     enabled: true,
+                    location: 'edge',
+                    customizeTooltip: function (a) { return { text: "".concat(a.seriesName, ": ").concat(a.valueText) }; }
                 }
             };
             if (this.palette) {
@@ -486,6 +488,7 @@ var APP;
                 },
                 tooltip: {
                     enabled: true,
+                    customizeTooltip: function (a) { return { text: "".concat(a.argumentText, ": ").concat(a.valueText) }; }
                 }
             };
             if (this.palette) {

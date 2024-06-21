@@ -2,8 +2,8 @@ window.BSIT={
 	counter: 0,
 	triggerReadyState: (info) => {
 		console.log(`${info.appName} ready!`);
-		window.dispatchEvent(new CustomEvent('erpb:app-ready', info));
-		let cc = new CustomEvent('config-change', {detail: {baseUrl:"https://gwapi.laziocrea.it/erpb"}});
+		window.dispatchEvent(new CustomEvent('app:app-ready', info));
+		let cc = new CustomEvent('config-change', {detail: {baseUrl:"https://gateway.portal.dew/app"}});
 		window.dispatchEvent(cc);
 		let sc = new CustomEvent('session-change', {detail: {accessToken:"1", userInfo:null, isClientCredentials:true, medico:false}});
 		window.dispatchEvent(sc);

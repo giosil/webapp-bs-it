@@ -44,7 +44,7 @@ window.BSIT={
 			style="display: block;" id="api-notification-${counterId}" data-bs-toggle="notification" data-bs-target="#api-notification-${counterId}" data-id="${counterId}" data-bs-timeout="5000">
 			<h5>
 				${notification.title}
-				<svg class="icon"><use href="bootstrap-italia/svg/sprite.svg#${notification.icon}" xlink:href="/fse-portal/bootstrap-italia/svg/sprite.svg#${notification.icon}"></use></svg>
+				<svg class="icon"><use href="bootstrap-italia/svg/sprite.svg#${notification.icon}" xlink:href="/bootstrap-italia/svg/sprite.svg#${notification.icon}"></use></svg>
 			</h5>
 			<p>${notification.message}</p>
 			<button type="button" class="notification-close btn btn- ${!notification.dismissable ? 'd-none' : ''}">

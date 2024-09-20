@@ -25,9 +25,9 @@
 							</header>
 							<section class="entry-content">
 								<div id="entry-content-home" class="panel-layout">
-									<div id="pg-gb2003-6317cec0e4bcd-0" class="panel-grid panel-has-style">
-										<div class="siteorigin-panels-stretch panel-row-style panel-row-style-for-gb2003-6317cec0e4bcd-0" data-stretch-type="full-stretched" style="margin-left: -371.5px; margin-right: -371.5px; padding-left: 0px; padding-right: 0px; border-left: 0px; border-right: 0px;">
-											<div id="pgc-gb2003-6317cec0e4bcd-0-0" class="panel-grid-cell" style="padding-left: 0px; padding-right: 0px;">
+									<div id="pg-home-0" class="panel-grid panel-has-style">
+										<div class="siteorigin-panels-stretch panel-row-style panel-row-style-for-home-0" data-stretch-type="full-stretched" style="margin-left: -371.5px; margin-right: -371.5px; padding-left: 0px; padding-right: 0px; border-left: 0px; border-right: 0px;">
+											<div id="pgc-home-0-0" class="panel-grid-cell" style="padding-left: 0px; padding-right: 0px;">
 												<div class="widget_text so-panel widget widget_custom_html panel-first-child panel-last-child" data-index="0">
 													<div class="textwidget custom-html-widget">
 														<div class="row pt-3">

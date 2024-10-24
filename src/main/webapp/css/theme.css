@@ -404,7 +404,7 @@ div#block-2 {
 }
 
 #pg-home-0, #pl-home .so-panel {
-	margin-bottom: 30px
+	margin-bottom: 20px
 }
 
 #pgc-home-1-0 {
@@ -422,7 +422,7 @@ div#block-2 {
 }
 
 #pg-home-0>.panel-row-style {
-	background-image: url("../img/bg_home.png");
+	background-image: url("../img/bg.png");
 	background-position: center center;
 	background-size: cover
 }

@@ -7,9 +7,9 @@
 		<div class="it-header-slim-wrapper">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-10">
+					<div class="col-md-12">
 						<div class="it-header-slim-wrapper-content">
-							<div class="row">
+							<div class="row d-flex align-items-center justify-content-between">
 								<div class="box_loghi">
 									<img class="logo_header_img" src="./img/logo_html5.png" alt="#" title="HTML 5">
 									<img class="logo_header_img" src="./img/logo_css.png" alt="#" title="CSS 3">
@@ -21,15 +21,6 @@
 							</div>
 						</div>
 					</div>
-				<% if(_user == null) { %>
-					<div class="col-md-2" style="text-align:-webkit-right;text-align:-moz-right;padding-top:16px;">
-						<button id="btnLogin" class="btn btn-primary" type="button" title="Accedi" onclick="location.href='<%= App.LOGIN_PAGE %>'"><i class="fa fa-sign-in"></i> Accedi</button>
-					</div>
-				<% } else { %>
-					<div class="col-md-2" style="text-align:-webkit-right;text-align:-moz-right;padding-top:16px;">
-						<button id="btnLogout" class="btn btn-primary" type="button" title="Logout" onclick="location.href='<%= App.LOGOUT_PAGE %>'"><i class="fa fa-sign-out"></i> Logout</button>
-					</div>
-				<% } %>
 				</div>
 			</div>
 		</div>
@@ -37,18 +28,26 @@
 			<div class="it-header-center-wrapper">
 				<div class="container">
 					<div class="row">
-						<div class="col-12">
+						<div class="col-md-12">
 							<div class="it-header-center-content-wrapper">
 								<div class="it-brand-wrapper">
 									<a href="index.jsp" title="Home" rel="home">
 										<img class="icon" src="./img/logo_app.png" alt="brand">
 										<div class="it-brand-text">
-											<h2 class="no_toc"><%= App.getBrandName() %></h2>
-											<h3 class="no_toc d-none d-md-block"><%= App.getBrandMotto() %></h3>
+											<h2 class="it-brand-title"><%= App.getBrandName() %></h2>
+											<h3 class="it-brand-tagline d-none d-md-block"><%= App.getBrandMotto() %></h3>
 										</div>
 									</a>
 								</div>
-								<div class="it-right-zone"></div>
+								<div class="it-right-zone">
+									<div style="text-align: -webkit-right;text-align: -moz-right;">
+									<% if(_user == null) { %>
+										<button id="btnLogin" class="btn btn-primary btn-sm btn-md-lg" type="button" title="Accedi" onclick="location.href='<%= App.LOGIN_PAGE %>'"><i class="fa fa-sign-in"></i> Accedi</button>
+									<% } else { %>
+										<button id="btnLogout" class="btn btn-primary btn-sm btn-md-lg" type="button" title="Logout" onclick="location.href='<%= App.LOGOUT_PAGE %>'"><i class="fa fa-sign-out"></i> Logout</button>
+									<% } %>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>

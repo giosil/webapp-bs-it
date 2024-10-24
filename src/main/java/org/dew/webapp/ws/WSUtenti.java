@@ -182,7 +182,6 @@ class WSUtenti
       }
       if(user != null) {
         user.setResources(getResources(conn, user));
-        user.setStructures(getStructures(conn, user));
         
         String tokenId = notifyLogin(conn, sUsername, tsDtAccesso);
         user.setTokenId(tokenId);
@@ -240,7 +239,6 @@ class WSUtenti
       }
       if(user != null) {
         user.setResources(getResources(conn, user));
-        user.setStructures(getStructures(conn, user));
         
         String tokenId = notifyLogin(conn, user.getUserName(), tsDtAccesso);
         user.setTokenId(tokenId);
@@ -332,7 +330,6 @@ class WSUtenti
       
       if(user != null) {
         user.setResources(getResources(conn, user));
-        user.setStructures(getStructures(conn, user));
       }
     }
     catch(Exception ex) {
@@ -426,33 +423,6 @@ class WSUtenti
       ConnectionManager.close(rs, pstm);
     }
     return mapResult;
-  }
-  
-  public static
-  List<Integer> getStructures(Connection conn, User user)
-    throws Exception
-  {
-    List<Integer> listResult = new ArrayList<Integer>();
-    if(user == null) return listResult;
-    PreparedStatement pstm = null;
-    ResultSet rs = null;
-    try {
-      pstm = conn.prepareStatement("SELECT ID_ANAGRAFICA FROM UTE_UTENTI_ANAGRAFICHE WHERE ID_UTENTE=?");
-      pstm.setString(1, user.getName());
-      rs = pstm.executeQuery();
-      while(rs.next()) {
-        int idAnagrafica = rs.getInt("ID_ANAGRAFICA");
-        listResult.add(idAnagrafica);
-      }
-    } 
-    catch (Exception ex) {
-      logger.error("Eccezione in WSUtenti.getStructures(conn," + user + ")", ex);
-      throw ex;
-    } 
-    finally {
-      ConnectionManager.close(rs, pstm);
-    }
-    return listResult;
   }
   
   public static
@@ -575,7 +545,6 @@ class WSUtenti
       }
       if(user != null) {
         user.setResources(getResources(conn, user));
-        user.setStructures(getStructures(conn, user));
       }
       
       if(user == null) {

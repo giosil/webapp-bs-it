@@ -4,23 +4,18 @@
 %>
 <header id="header" class="fixed-top" role="banner">
 	<div class="it-header-wrapper">
-		<div class="it-header-slim-wrapper">
+		<div class="it-header-center-wrapper">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-5 d-none d-md-block">
-						<div class="it-header-slim-wrapper-content">
-							<div class="row">
-								<img src="./img/logo_app.png" alt="brand" style="width:60px;height:60px;">
-								<a href="index.jsp" title="Home" rel="home" style="text-decoration:none">
-									<h2 class="no_toc" style="padding-top:8px;padding-left:16px"><%= App.getBrandName() %></h2>
-								</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-5 d-none d-md-block">
-						<div class="it-header-slim-wrapper-content">
-							<div class="row">
-								<div class="box_loghi">
+					<div class="col-md-12">
+						<div class="it-header-center-content-wrapper">
+							<div class="row ">
+								<div class="it-brand-wrapper" style="padding-right: 2rem;">
+									<a href="index.jsp" title="Home" rel="home">
+										<img class="icon" src="./img/logo_app.png" alt="brand"style="margin: 0; padding: 0"/>
+									</a>
+								</div>
+								<div class="box_loghi d-none d-md-block">
 									<img class="logo_header_img" src="./img/logo_html5.png" alt="#" title="HTML 5">
 									<img class="logo_header_img" src="./img/logo_css.png" alt="#" title="CSS 3">
 									<img class="logo_header_img" src="./img/logo_js.png" alt="#" title="Javascript">
@@ -29,17 +24,17 @@
 									<img class="logo_header_img" src="./img/logo_ts.png" alt="#" title="Typescript">
 								</div>
 							</div>
+							<div class="it-right-zone">
+								<div style="text-align: -webkit-right;text-align: -moz-right;">
+								<% if(_user == null) { %>
+									<button id="btnLogin" class="btn btn-primary btn-sm btn-md-lg" type="button" title="Accedi" onclick="location.href='<%= App.LOGIN_PAGE %>'"><i class="fa fa-sign-in"></i> Accedi</button>
+								<% } else { %>
+									<button id="btnLogout" class="btn btn-primary btn-sm btn-md-lg" type="button" title="Logout" onclick="location.href='<%= App.LOGOUT_PAGE %>'"><i class="fa fa-sign-out"></i> Logout</button>
+								<% } %>
+								</div>
+							</div>
 						</div>
 					</div>
-				<% if(_user == null) { %>
-					<div class="col-md-2" style="text-align:-webkit-right;text-align:-moz-right;padding:10px 0px 0px 0px;">
-						<button id="btnLogin" class="btn-sm btn-primary" type="button" title="Accedi" onclick="location.href='<%= App.LOGIN_PAGE %>'"><i class="fa fa-sign-in"></i> Accedi</button>
-					</div>
-				<% } else { %>
-					<div class="col-md-2" style="text-align:-webkit-right;text-align:-moz-right;padding:10px 0px 0px 0px;">
-						<button id="btnLogout" class="btn-sm btn-primary" type="button" title="Logout" onclick="location.href='<%= App.LOGOUT_PAGE %>'"><i class="fa fa-sign-out"></i> Logout</button>
-					</div>
-				<% } %>
 				</div>
 			</div>
 		</div>
